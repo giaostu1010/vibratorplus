@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_hasVibrator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="判断是否有振动器" />
+
+
+    <Button
+        android:id="@+id/btn_short"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="短振动" />
+
+    <Button
+        android:id="@+id/btn_long"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="长振动" />
+
+    <Button
+        android:id="@+id/btn_rhythm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="节奏振动" />
+
+    <Button
+        android:id="@+id/btn_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消振动" />
+
+    <!-- 在现有按钮下方添加 -->
+    <Button
+        android:id="@+id/btn_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="上传振动模式文件"
+        android:layout_margin="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="开始"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/btn_pause"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="暂停"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="停止"
+            android:layout_margin="2dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="振动模式文件请通过 soundlow2vibrator 生成，将txt导入即可使用\n"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/seemuch" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="“多看看上面这个能解愁”"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\nCopyright 2025 xfzcc network. All rights reserved." />
+
+</LinearLayout>
